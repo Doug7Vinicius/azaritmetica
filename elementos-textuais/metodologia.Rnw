@@ -1,0 +1,5 @@
+\chapter{METODOLOGIA}
+\label{chap:metodologia}
+
+Testando a citação... \cite{lamport1986latex}
+

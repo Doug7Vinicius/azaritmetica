@@ -1,0 +1,209 @@
+\documentclass[        
+    a4paper,          % Tamanho da folha A4.
+    sumario = tradicional, % Estilo tradicional de sumários do memoir.
+    12pt,             % Tamanho da fonte 12pt.
+    chapter=TITLE,    % Todos os capitulos devem ter caixa alta.
+    section=TITLE,    % Todas as secoes devem ter caixa alta.
+    oneside,          % Usada para impressao em apenas uma face do papel.
+    english,          % Hifenizacoes em ingles.
+    spanish,          % Hifenizacoes em espanhol.
+    brazil            % Ultimo idioma eh o idioma padrao do documento.
+]{abntex2}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\input{lib/preambulo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          Configuracoes do UnirTeX2              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Opcoes disponiveis
+
+%\relatorioacademico{relatorio}
+\trabalhoacademico{tccgraduacao}
+
+% Define se o trabalho eh uma qualificacao
+% Coloque 'nao' para versao final do trabalho
+
+%\ehqualificacao{nao}
+
+% Remove as bordas vermelhas e verdes do PDF gerado
+% Coloque 'sim' pare remover
+
+\removerbordasdohyperlink{sim} 
+
+% Adiciona a cor Azul a todos os hyperlinks
+
+\cordohyperlink{nao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          Informação sobre a IES                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ies{Fundação Universidade Federal de Rondônia}
+\iessigla{UNIR}
+\centro{PRÓ-REITORIA DE PÓS-GRADUAÇÃO E PESQUISA – PROPESq}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        Informação para TCC de Graduacao         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graduacaoem{Estatística}
+\habilitacao{bacharelado} % Pode colocar tambem 'licenciada', 'bacharel'.
+\programarelatorio{PROGRAMA INSTITUCIONAL DE BOLSAS E TRABALHO VOLUNTÁRIO DE INICIAÇÃO CIENTÍFICA – PIBIC/UNIR/CNPq}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Informação relacionadas ao trabalho     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\autor{RELATÓRIO PARCIAL E RESUMO INFORMATIVO DO PIBIC/UNIR/CNPq
+CICLO 2019/2020}
+\titulo{NÚMEROS PRIMOS: OS ÁTOMOS DA ARITMÉTICA}
+\data{2020}
+\local{Ji-Paraná - RO}
+
+% Exemplo: \dataaprovacao{01 de Janeiro de 2012}
+%\dataaprovacao{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Informação sobre o Orientador       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\orientador{Profª. Dra. Lucia de Fatima de Medeiros Brandão Dias}
+\orientadories{Fundação Universidade Federal de Rondônia}
+\orientadorcentro{Departamento de Matemática e Estatística}
+\orientadorfeminino{sim} % Coloque 'sim' se for do sexo feminino
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Informação sobre o Co-orientador   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Deixe o nome do coorientador em branco para remover do documento
+
+%\coorientador{Prof.ª Dra. Roziane Sobreira dos Santos}
+%\coorientadories{Fundação Universidade Federal de Rondônia}
+%\coorientadorcentro{Departamento de Matemática e Estatística}
+%\coorientadorfeminino{sim} % Coloque 'sim' se for do sexo feminino
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Informação sobre a banca           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Atenção! Deixe o nome do membro da banca para remover da folha de aprovacao
+
+% Exemplo de uso:
+% \membrodabancadois{Prof. Dr. Fulano de Tal}
+% \membrodabancadoisies{Universidade Estadual do Ceará - UECE}
+
+%\membrodabancadois{Membro da Banca Dois}
+%\membrodabancadoiscentro{Faculdade de Filosofia Dom Aureliano Matos – FAFIDAM}
+%\membrodabancadoisies{Universidade do Membro da Banca Dois - SIGLA}
+%\membrodabancatres{Membro da Banca Três}
+%\membrodabancatrescentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancatresies{Universidade do Membro da Banca Três - SIGLA}
+%\membrodabancaquatro{Membro da Banca Quatro}
+%\membrodabancaquatrocentro{Centro de Ciências e Tecnologia - CCT}
+%\membrodabancaquatroies{Universidade do Membro da Banca Quatro - SIGLA}
+%\membrodabancacinco{Membro da Banca Cinco}
+%\membrodabancacincocentro{Teste}
+%\membrodabancacincoies{Universidade do Membro da Banca Cinco - SIGLA}
+%\membrodabancaseis{Membro da Banca Seis}
+%\membrodabancaseiscentro{}
+%\membrodabancaseisies{Universidade do Membro da Banca Seis - SIGLA}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}	
+
+	% Elementos pré-textuais
+	\imprimircapa
+%	\imprimirfolhaderosto{}
+%	\imprimirfichacatalografica{elementos-pre-textuais/ficha-catalografica}
+%	\imprimirerrata{elementos-pre-textuais/errata}
+%	\imprimirfolhadeaprovacao
+%	\imprimirdedicatoria{elementos-pre-textuais/dedicatoria}
+%	\imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
+%	\imprimirepigrafe{elementos-pre-textuais/epigrafe}
+	\imprimirresumo{elementos-pre-textuais/resumo}
+	\imprimirabstract{elementos-pre-textuais/abstract}
+	\imprimirlistadeilustracoes
+	\imprimirlistadetabelas
+%	\imprimirlistadequadros
+%	\imprimirlistadealgoritmos
+%	\imprimirlistadecodigosfonte
+%	\imprimirlistadeabreviaturasesiglas	
+%	\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos}   
+	\imprimirsumario
+	
+	%Elementos textuais
+%	\textual
+	\input{elementos-textuais/introducao}
+%	\input{elementos-textuais/fundamentacao-teorica}
+	\input{elementos-textuais/objetivo}
+%	\input{elementos-textuais/metodologia}
+  \input{elementos-textuais/materiais-metodos}
+	\input{elementos-textuais/resultados}
+	\input{elementos-textuais/conclusao}
+	
+	%Elementos pós-textuais	
+	\bibliography{elementos-pos-textuais/referencias}
+%	\imprimirglossario	
+%	\imprimirapendices
+		% Adicione aqui os apendices do seu trabalho
+%		\input{elementos-pos-textuais/apendices/historico-de-mudancas}
+%		\input{elementos-pos-textuais/apendices/lorem-ipsum}
+%		\input{elementos-pos-textuais/apendices/termo-de-fiel-depositario}	
+%	\imprimiranexos
+		% Adicione aqui os anexos do seu trabalho
+%		\input{elementos-pos-textuais/anexos/exemplo-de-anexo}		
+%		\input{elementos-pos-textuais/anexos/dinamica-das-classes-sociais}
+%	\imprimirindice
+
+\end{document}

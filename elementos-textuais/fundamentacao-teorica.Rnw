@@ -1,0 +1,18 @@
+\chapter{REFERENCIAL TEÓRICO}
+\label{cap:fundamentacao-teorica}
+
+  \section{TEORIA DOS NÚMEROS}
+  
+    \subsection{Lógica Matemática}
+    
+    \subsection{Funções e Conjuntos}
+    
+    \subsection{Teoria dos Números}
+    
+      \subsubsection{Princípio da Indução Finita}
+    
+      \subsubsection{Divisibilidade}
+      
+      \subsubsection{Algoritmo da Divisão}
+      
+      \subsubsection{Máximo Divisor Comum}

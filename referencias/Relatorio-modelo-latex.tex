@@ -1,0 +1,177 @@
+\documentclass[10pt]{article}
+\textwidth=16.0truecm \textheight=21.0truecm \voffset=-2.0truecm
+\hoffset=-1.5cm
+
+\usepackage{amssymb}
+%\usepackage{psfig}
+%\usepackage{epsfig}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancybox}
+%\usepackage[spanish]{babel}
+%\selectlanguage{portuges}
+%\usepackage[latin1]{inputenc}
+
+
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+
+\newtheorem{teo}{Teorema}
+\newtheorem{prop}{Proposição}
+\newtheorem{coro}{Corolário}
+\newtheorem{lema}{Lema}
+\newtheorem{obs}{Observação}
+\newtheorem{defn}{Definição}
+\newtheorem{exemplo}{Exemplo}
+\newtheorem{exe}{Exercício}
+\newcommand{\be}{\begin{eqnarray}}
+\newcommand{\ee}{\end{eqnarray}}
+\newcommand{\real}{\mbox{I${\!}$R}}
+
+
+\renewcommand{\cdot}{\raise0.5ex\hbox{.}}
+
+\begin{document}
+
+
+\noindent {\bf UNIVERSIDADE FEDERAL DE ROND\^ONIA}\\
+{\bf DEPARTAMENTO DE MATEM\'{A}TICA E ESTAT\'ISTICA/JI-PARAN\'A}\\
+{\bf Disciplina:} AN\'ALISE REAL \hspace{92pt}
+%{\bf Turmas:} T07 e T09\\
+%{\bf Prof.:} L\'ucia Brand\~ao\hspace{32pt}
+%{\bf Data:} 25/09/18\\
+\\
+
+\begin{center}
+{\large \bf \underline{TIPOS DE DEMOSTRAÇÕES E APLICAÇÃO À TEORIA DOS CONJUNTOS}}
+\end{center}
+\par\noindent {\bf Bibliografia:}\\
+\noindent $\bullet$ Ávila, G., Ánálise matemática para licenciatura, Ed. Edgard, 2006.\\
+          $\bullet$ Poole, David, Álgebra linear, Thomson, 2004.\\
+          $\bullet$ Filho, Daniel C., Um convite à matemática, SBM, 2016.\\
+          $\bullet$ Lages, Elon, Curso de análise,vol.1 Projeto euclides.\\
+
+
+\noindent {\bf  1. ALGUMAS ANOTAÇÕES SOBRE CONJUNTOS.}\\
+\begin{defn} Um conjunto é uma coleção de objetos, chamados elementos ou membros. Usamos letras maiúsculas A, B, R, ... para denotarmos conjuntos e letras minúsculas para denotarmos os elementos do conjunto.  
+\end{defn}
+Seja  $A$ um conjunto e $x$ um elemento, então se $x$ pertencer a $A$, denotamos por $x\in A$, caso contrário $x\not\in A$. \\
+\noindent Podemos descrever um conjunto por meio de uma propriedade $P$ de seus elementos  e escrevemos do seguinte modo: $A=\{x| x\, \, \mbox{tem a propriedade P}\}$ (lemos A é o conjunto dos elementos x tal que x satisfaz a propriedade P).\\
+\begin{exemplo} $A=\{x\in \mathbb{R}| x \, \, $ é divisível por $2\}$\end{exemplo}
+\begin{exemplo} O produto cartesinao dos conjuntos $A$ e $B$, $A\times B=\{(a,b)| a\in A, b\in B\} $ é um conjunto. Os elementos desse conjunto são ditos pares ordenados.\end{exemplo}
+\noindent {\bf Subconjunto:} Um conjunto $A$ é subconjunto de $B$ se, e somente se, todo elemento de $A$ for elemento de $B$ e denotamos isso por $A\subset B$. Em símbolo temos $A\subset B\Leftrightarrow \forall x, x\in A\Rightarrow x\in B.$\\
+\noindent  Dizemos que $A$ é um subconjunto próprio de $B$ se $A\subset B$ mas $A\neq B$, ou seja, existe algum elemento de $B$ que não está em $A$. \\
+\noindent {\bf Conjunto vazio} Chamamos de conjunto vazio aquele que não possui elemento algum. Usamos o símbolo $\emptyset$ para representá-lo. Obtemos um conjunto vazio quando descrevemos um conjunto por uma propriedade $P$ logicamente falsa.  Exemplo: 1)$\{x| x\neq x\}=\emptyset$, 2)$\{x| x\, \mbox{é impar e múltiplo de 2}\}=\emptyset$. Podemos definir o conjunto vazio $\emptyset$ assim: qualquer que seja $x$, tem-se que $x\not\in \emptyset$ ou $A=\emptyset \Leftrightarrow x\not\in A$ para todo $x\in E$ onde $E$ é o conjunto universo (ou seja o conjunto que contém todos os conjuntos que ocorrem numa certa discussão).
+
+\noindent {\bf Conjuntos iguais:} $A=B\Leftrightarrow \forall x, x\in A\Leftrightarrow x\in B$ ou $A=B\Leftrightarrow A\subset B$ e $B\subset A$.\\
+\noindent {\bf Conjunto das partes:} Dado um conjunto $A$, chama-se conjunto das partes de $A$, denotado por $\mathcal{P}(A)$, aquele que é formado por todos os subconjuntos de $A$. Em símbolo: $\mathcal{P}(A)=\{X|X\subset A\}$. Exemplo: Considere $A=\{a,b\}$, então $\mathcal{P}(A)=\{\emptyset, \{a\}, \{b\}, \{a,b\}\}$\\
+\begin{obs} Dado um conjunto $A$. Então, $x\in A\Leftrightarrow \{x\}\subset A$ (lê-se $x$ pertence a $A$ se, e somente se, o conjunto unitário formado por $x$ é subconjunto de $A$.)\end{obs}
+\noindent Dados $A$ e $B$ conjuntos. Definimos:\\
+\noindent {\bf Conjunto união e conjunto interseção:}Definimos o conjunto $A$ união $B$, $A\cup B$, como sendo $A\cup B=\{x| x\in A\, \, ou \, \, x\in B\}$. Definimos o conjunto $A$ interseção $B$, $A\cap B$, como sendo $A\cap B=\{x| x\in A\, \, e\, \, x\in B\}$.
+\noindent {\bf Conjunto diferença: }Chama-se diferença entre $A$ e $B$ o conjunto formado pelos elementos de $A$ que não pertencem a $B$. Em símbolo, $A-B=\{x|x\in A\, \, e\, \, x\not\in B\}$.\\
+\noindent {\bf Conjunto complementar de $B$ em $A$:} Chama-se complementar de $B$ em relação a $A$ o conjunto $A-B$, ou seja, o conjunto dos elementos de $A$ que não pertencem a $B$. Em símbolo, $\complement_{A} {B}$ ou $\overline{B}$. Exemplo: Considere o conjunto dos números reais $\mathbb{R}$. Quem é $\overline{\mathbb{R}}$ ou $\complement_{\mathbb{R}}^{\mathbb{R}}$ ?[1pc]\\
+\noindent {\bf Observação:} Seja $E$ o conjunto universo  e $A$ um subconjunto. Podemos escrever o complementar de $A$ em $E$ ou simplesmente o complementar de $A$ na linguagem de conjuntos da seguinte maneira: $$\complement A=\{x| x\in E\, \, e\, \, x\not\in A\}.$$
+\noindent {\bf Função:} Sejam $A$ e $B$ conjuntos. Definimos uma função $f:A\rightarrow B$ como sendo uma regra que associa todo elemento de $A$ a um único elemento de $B$. Chamamos $A$ de domínio da função $f$, $B$ é dito contra-domínio de $f$. O conjunto imagem de $f$, $Im(f)$, é $Im(f)=\{y\in B|y=f(x), $ {para algum} $x$\, em \, $A\}$.\\
+Dado um subconjunto $X$ de $A$, $X\subset A$, definimos o subconjunto $f(x)$ de $B$ como $$f(X)=\{f(x)| x\in X\}=\{y\in B| y=f(x), x\in X\}.$$
+Dado um subconjunto $Y$ de B, $Y\subset B$, definimos a imagem inversa de $Y$ pela função $f$ como sendo $$f^{-1}(Y)={x\in A|f(x)\in Y}.$$
+Diagramas\\[2pc]
+\noindent{\bf  2. TIPOS DE DEMONSTRAÇÕES}\\
+Existem, resumidamente falando, dois tipos de demonstrações em matemática: as demonstrações diretas e demonstrações indiretas. Muitos teoremas tem a estrutura "se $P$, então $Q$", onde $P$ e $Q$ são afirmações falsas ou verdadeiras. Chamamos $P$ de hipótese ou premissa e $Q$ de tese ou conclusão. Em símbolo, $P\Rightarrow Q$ e lemos $P$ implica $Q$ ou se $P$, então $Q$.\\
+\noindent {\bf 2.1. DEMONSTRAÇÕES DIRETA }\\
+O procedimento para uma demonstração direta é através de implicações encadeadas $$P\Rightarrow P_1\Rightarrow P_2\Rightarrow \cdots \Rightarrow P_n\Rightarrow Q$$ que levam $P$ diretamente a $Q$. (usar o exemplo do argumento no livro convite a matematica?)
+\begin{exemplo}
+Mostre que quaisquer dois quadrados perfeitos consecutivos diferem por um número ímpar. Podemos reescrever essa instrução por "mostre que , se $a$ e $b$ são quadrados perfeitos consecutivos, a-b é um número ímpar." Portanto essa instrução é da forma $P\Rightarrow Q$, onde $P$  é \, \, \, \, \, \, \, \, \, \, \, \, \, \, \, \, \, \,  \, \, \, \,      e $Q$ é  \, \, \, \,  \, \, \, \,  \, \, \, \,  \, \, \, \, \\
+\noindent {\bf Demonstração:}Suponha que $a$ e $b$ sejam quadrados perfeitos consecutivos, ou seja, $a=n^2$ e $b=(n+1)^2$ com $n\in \mathbb{Z}$. Queremos mostrar que eles diferem por um número primo, ou seja, $b-a$ ou $a-b$ é um número ímpar. Observe
+Como $a=n^2$ e $b=(n+1)^2$ então $b-a=(n+1)^2-n^2=n^2+2n+1-n^2=2n+1$. Portanto, $b-a$ é um número ímpar.
+\end{exemplo}
+\begin{exemplo}
+\begin{teo}Sejam $A$ e $B$ conjuntos. Mostre que se $A\subset B$ então $\complement B \subset \complement A$.\end{teo}
+%\item $A-\complement B=A \cap B$.
+\vspace{2cm}
+\end{exemplo}
+\noindent {\bf 2.2 DEMONSTRAÇÕES INDIRETAS}\\
+Existem dois tipos de demonstração indireta que podemos usar para estabelecer uma afirmação condicional da forma $P\Rightarrow Q$: demonstração por absurdo, demonstração por contra-positiva.\\
+\noindent {\bf 2.2.1 Demonstração por absurdo}\\
+Na demonstração por absurdo (ou por redução ao absurdo ou por contradição) nós assumimos que a hipótese $P$ é verdadeira, como fazemos na demonstração direta, mas nesses caso supomos que a conclusão $Q$ é falsa. A estratégia então é mostrar que isso não é possível (mostrar que não é possivel a conclusão $Q$ ser falsa), encontrando uma contradição ou um absurdo para a veracidade de $P$. Dessa forma, segue então que $Q$ tem que ser verdadeira.
+\begin{exemplo}Seja $n\in \mathbb{N}$. Mostre que, se $n^2$ é par, então $n$ também o é.\\
+\noindent Primeiramente, tente fazer essa demonstração a princípio de modo direto.\\
+{\bf Demonstração:} Seja $n\in \mathbb{N}$ tal que $n^2$ é par (isso diz que a hipótese é verdadeira). Queremos mostrar que $n$ é par (essa é a tese que queremos provar). Como faremos a demonstração por absurdo, vamos supor que $n^2$ é número par mas $n$ não é. Dessa forma, $n$ é um número ímpar, ou seja, $n=2k+1$ com $k\in\mathbb{N}$. Assim, $n^2=(2k+1)^2= 4k^2+4k+1=2(2k^2+2k)+1$ o que implica que $n^2$ é um número \'impar, absurdo! pois por hipótese $n^2$ é par. Portanto, resumindo vimos que se $n^2$ é par e $n$ é ímpar teremos que $n^2$ é ímpar, um absurdo. Logo, se $n^2$ é par só podemos ter que $n$ é par.
+\end{exemplo}
+\begin{exemplo}
+Mostre que $\sqrt{2}\not\in \mathbb{Q}$. Observe que isso é o mesmo que dizer: Se $x\in \mathbb{R}, x>0$ e $x^2=2$ então $x\not\in \mathbb{Q}$.\\
+\noindent Primeiramente vamos recordar a definição de um número racional: um número $r\in \mathbb{R}$ é dito racional se existem $p, q\in \mathbb{Z}$ com $q\neq 0$ tais que $r=\dfrac{p}{q}$. E, como dado $\dfrac{p}{q}$ onde $p, q \in \mathbb{Z}, q\neq 0$ existirá sempre $\dfrac{c}{d}, c, d \in \mathbb{Z}, d\neq 0$ com $mdc(c,d)=1$ tal que $\dfrac{p}{q}=\dfrac{c}{d}$, podemos sempre pensar um número racional $r$ como sendo um número na forma $r=\dfrac{a}{b}$ onde $a,b\in \mathbb{Z}, b\neq 0$ e $mdc(a,b)=1$.\\
+Vamos fazer essa demonstração por redução ao absurdo ou por contradição. Suponha que  $x\in \mathbb{R}, x>0$ e $x^2=2$ mas que $\sqrt{2}= x\in \mathbb{Q}$. Logo, por definição de número racional, segue que existem $p, q\in \mathbb{Z}, q\neq 0$ e $p,q$ primos entre si (ou seja $mdc(p,q)=1$) tais que $x=\dfrac{p}{q}$. Assim, segue que $x^2q^2=p^2$ que é o mesmo que \begin{equation}\label{formula1}2q^2=p^2.\end{equation} Dessa forma, vemos que $2$ é divisor de $p^2$ ($p^2$ é um número par) e pelo resultado do exemplo anterior segue que $2$ também é divisor de $p$, ou seja, $p=2k, k\in \mathbb{Z}$. Assim, substituindo $p=2k$ em (\ref{formula1}) obtemos $2q^2=4k^2\Leftrightarrow q^2=2k^2.$ Assim, segue que $2$ divide $q^2$ e pelo exemplo anterior também concluímos que $2$ divide $q$. Mas isso contradiz o fato de $p$ e $q$ serem primos entre si, ou seja, $mdc(p,q)=1$. Portanto, $\sqrt{2}=x$ não pode ser escrito na forma $\dfrac{p}{q}$ com $p,q\in \mathbb{Z}, q\neq 0$. Dessa forma, a suposição inicial de $\sqrt{2}\in \mathbb{Q}$ é falsa, ou seja, $\sqrt{2}\not\in \mathbb{Q}$.
+\end{exemplo}
+\noindent {\bf 2.2.2 Demonstração por contrapositiva}\\
+A contrapositiva da afirmação condicional $P\Rightarrow Q$ é $\sim Q\Rightarrow \sim P$. Vimos que uma afirmação condicional e sua contrapositiva são proposições equivalentes, logo uma é verdadeira se, e somente se, a outra for e uma é falsa se, e somente se, a outra for.
+\begin{exemplo}Seja $n$ um número inteiro positivo. Mostre que se $n^2$ é número par, então $n$ também o é.\\
+Para demonstrarmos essa afirmação por contrapositiva devemos negar a tese:  $n$ é um número ímpar e tentar provar que $n^2$ também é um número ímpar (a negação da hipótese). Vamos lá\\
+Seja $n$ um número inteiro postivo tal que $n$ é um número ímpar, ou seja, $n=2k+1,k\in \mathbb{N}$. Queremos mostrar que $n^2$ é ímpar. Observe que se $n=2k+1$ então $n^2=(2k+1)^2=4k^2+4k+1=2(2k^2+2k)+1$ que é um número ímpar pois $2k^2+2k\in \mathbb{N}$. Portanto,  da negação da tese chegamos na negação da hipótese. Logo, provamos o que queríamos.
+\end{exemplo}
+\noindent Qual é a diferença entre o método de demonstração por absurdo e de demonstração por contrapositiva?
+%\vspace{1cm}
+\begin{obs}{\bf(Teoremas, proposições, lemas)}\\
+Chama-se de {\bf Proposição} qualquer afirmação, verdadeira ou falsa. Por exemplo, A: Todo número primo maior do que 2 é ímpar; B: A soma dos ângulos internos de um triângulo é $180^{o}$; C: Todo número ímpar é primo.\\
+{\bf Teorema} é uma proposição verdadeira do tipo $P\Rightarrow Q$, onde $P$ e $Q$ são proposições. No exemplo acima, as proposições A e B são teoremas mas C não.\\
+Chama-se {\bf Lema} a um teorema preparatório para a demonstração de um outro teorema (um resultado que auxilia na demonstração de um teorema). \\
+\noindent {\bf Corolário} é um teorema que segue como consequência imediata de outro teorema. Alguns autores reservam a palavra teorema para os resultados que devem ser destacados como os de mais importância.\\
+{\bf Condição necessária e suficiente}\\
+Num teorema $P\Rightarrow Q,$ diz que a hipótese $P$ é uma condição suficiente de $Q$, ou seja, basta a hipótese $P$ ser verdadeira para que a tese $Q$ também seja. Esta tese $Q$, por sua vez, é condição necessária de $P$, ou seja, a hipótese $P$ sendo verdadeira, a tese $Q$ também necessariamente será verdadeira pois caso $Q$ não seja verdadeira, $P$ também não será.\\
+A recíproca de um teorema $P\Rightarrow Q$ é a proposição $Q\Rightarrow P$, que pode ou não ser verdadeira. O teorema de Pitágoras  é um exemplo de teorema onde a recíproca é verdadeira, mas a recíproca do teorema "todo número primo maior do que 2 é ímpar" é falsa.\\
+\end{obs}
+\noindent {\bf 2.3 Demonstração por indução.}\\
+
+"Suponha que vamos a uma cidade e o primeiro táxi visto seja azul. Suponha que o segundo táxi também seja azul e o mesmo ocorra com o terceiro, quarto e quinto táxis vistos. Logo, de imediato, somos tentado a deduzir (precipitadamente) que todos os táxis daquela cidade são azuis." Certo??
+Esse é o que chamamos de raciocínio indutivo, segundo o qual se deduz algum fato após constatar um determinado número de vezes a ocorrência deste fato. Mas, sabemos que, na matemática, a comprovação da validade de um fato para centenas, milhares e até bilhões de vezes de casos observados não é suficiente para assegurarmos a validade desse fato para todos os casos, é preciso demonstrá-lo formalmente. Quando esse fato depende explicitamente de um número natural, isso é feito, quando conveniente, usando-se o Princípio da Indução que estudaremos abaixo.
+
+Suponha que o fato observado possa, de alguma forma, ser expresso por uma propriedade que denotaremos por $P(n),$ onde $n$ é um número natural. A fim de ilustrar o que pode vim a ser essa propriedade $P(n)$ veja os exemplos a seguir:
+\begin{exemplo}$P(n)$ pode ser a identidade $$1+r+r^2+\cdots + r^{n-1}+r^n=\dfrac{1-r^{n+1}}{1-r},\, \,  se\, \, \,  r\neq 1$$
+\end{exemplo}
+\begin{exemplo}(Desigualdade de Bernoulli) $P(n)$ pode ser a desigualdade $$(1+x)^n\geq 1+nx,\, \,  se\, \, \,  x\geq -1.$$
+\end{exemplo}
+O Princípio da Indução funciona da seguinte forma: suponha que se deseje provar determinada propriedade envolvendo números naturais, a qual chamaremos de $P(n)$. Para este fim, basta verificar a validade de $P(1)$, e mostrar que, se $P(k)$ é válida para algum número natural $k\geq 1$, então $P(k+1)$ é também válida.
+
+Observe que o princípio descrito acima garante a validade de $P(n)$ para todo número natural $n$. De fato, como $P(1)$ é válida, $P(2)$ que é igual a $P(1+1)$ também é válida. Como $P(2)$ é válida, $P(3)=P(2+1)$ é válida, e assim por diante.
+
+Para alguns problemas a propriedade $P(n)$ só começa a ser válida a partir de um certo $n_0>1$, como por exemplo $P(n): 2^n> n^2$. Observe que esta desigualdade só é válida a partir de $n_0=5$.
+
+\noindent {\bf Princípio da Indução} O princípio da indução é o terceiro axioma de Peano.
+Se $X\subseteq \mathbb{N}$ é um subconjunto de $\mathbb{N}$ tal que $1\in X$ e, para todo $n\in X$ tem se que $s(n)\in X$, então $X=\mathbb{N}$.
+
+Dessa forma, quando queremos mostrar que uma determinada propriedade $P(n)$, que depende apenas de um número natural $n$, seja válida para todos os números $n\geq n_0$ procedemos da seguinte forma:\\
+\noindent 1) Mostrar que $P(n_0)$é válida.\\
+\noindent 2)Mostrar que se $P(k)$ for válida para algum $k\geq n_0$, então $P(k+1)$ é válida.\\
+\noindent {\bf Observação:} A suposição de que $P(k)$ é válida é chamada de hipótese de indução.
+
+\begin{exemplo}
+Provando a Desigualdade de Bernoulli usando o princípio da indução.
+Observemos que $P(1)$ é verdade pois $(1+x)^{1}=(1+x)$, logo $(1+x)^{1}\geq (1+x)$. Agora suponha que $P(k)$ é verdade para algum $k$ fixado arbitrariamente (isso é o que chamamos de hipótese de indução). Assim, temos $(1+x)^{k}\geq (1+kx)$ para $x\geq -1$. Queremos mostrar que $P(k+1)$ é verdade.
+
+Observe que $(1+x)^{k+1}=(1+x)^k(1+x)\geq (1+kx)(1+x)= 1+x+kx+kx^2$, por hipótese de indução. Como $kx^2$ é positivo, segue que $(1+x)^{k+1}\geq 1+x+kx+kx^2\geq 1+x+kx=1+(1+k)x$. Portanto, $P(k+1)$ é verdadeira e assim, pelo Princípio da indução enunciado acima,  $P(n)$ é válida para todo $n$ número natural.
+
+\end{exemplo}
+
+\begin{exe}Mostre que a) $1+2+...+n=\dfrac{n(n+1)}{2}$\, \, \, b)$1+3+5+...+2n-1=n^2$ para todo $n$ número natural.
+\end{exe}
+
+
+\noindent {\bf Segundo princípio da indução:}\\
+1)Mostrar que $P(n_0)$ é verdadeira.\\
+2)Suponha que $P(m)$ é verdade para todo $n_0\leq m< k$ e mostre que $P(k)$ é verdade.
+ \begin{exemplo}
+ Todo número natural maior do que ou  igual a 2 pode ser decomposto num produto de números primos.\\
+ \noindent Demonstraremos usando o 2o. princípio da indução.
+
+ \noindent Se $n=2$, a decomposição é trivial pois $2$ é número primo.
+
+ \noindent Suponha que todo número natural $m, 2\leq m< k$ possa ser decomposto como produto de números primos, queremos mostrar que isso vale para $k$.
+
+ \noindent Se $k$ for um número primo, nada mais há a provar. Se $k$ não for um número primo, então $k$ é um número composto e assim  $k=a\, b$ com $a< k$ e $b<k$. Assim, por hipótese de indução, $a=a_1...a_l$ e $b=b_1...b_j$ é um produto de números primos. Portanto, $k=a.b=a_1...a_l.b_1...b_j$ é um produto de números primos.
+ \end{exemplo}
+
+
+
+\end{document} 
