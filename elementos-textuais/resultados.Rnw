@@ -1,73 +1,14 @@
-\chapter{RESULTADOS E DISCUSSÕES}
+\chapter{Resultados}
 \label{chap:resultados}
 
-  \section{Lógica Matemática}
+\lipsum[2]
 
-Conforme \cite{de2002iniciaccao} a lógica matemática adota como regra fundamentais do pensamento os dois seguintes princípios (ou axiomas):
+\section{Resultados do Experimento A}
+\label{sec:resultados-do-experimento-a}
 
-\begin{itemize}
-  \item PRINCÍPIO DA NÃO CONTRADIÇÃO: \textbf{uma proposição não pode ser verdadeira e falsa ao mesmo tempo.}
-  \item PRINCÍPIO DO TERCEIRO EXCLUÍDO: \textbf{toda proposição ou é verdadeira ou falsa, isto é, verifica-se sempre um destes casos e nunca um terceiro.}
-\end{itemize}
-  
-Em virtude desses dois princípios temos que a Lógica Matemática é uma lógica bivalente. Por definição, proposição significa uma oração declarativa, que tem sentido afirmativo completo.  
+\lipsum[3]
 
-    \subsection{Proposições Simples e Compostos}
-    
-Definição: chama-se de proposição simples ou proposições atômicas aquela que não contém nenhuma outra proposição como parte integrante de si mesma.
+\section{Resultados do Experimento B}
+\label{sec:resultados-do-experimento-b}
 
-Definição: chama-se proposição composta ou proposição molecular aquela formada pela combinação de duas ou mais proposições.
-    
-    \subsection{Conectivos}
-
-Definição: chama-se conectivos palavras ou expressões que se usam para formar, interligar novas proposições a partir de outras.
-
-  \section{Conjuntos e Funções}
-  
-  \section{Tipos de Demonstrações}
-  
-Resumidamente existem dois tipos de demonstrações em matemática: as demonstrações direta e demonstrações indiretas. Grande parte dos teoremas tem a estrutura "se \textit{P}, então \textit{Q}, onde \textit{P} e \textit{Q} são afirmações falsas ou verdadeiras. Chamamos de \textit{P} de hipótese ou premissa e \textit{Q} de tese ou conclusão.
-
-    \subsection{Demonstração Direta}
-    
-    \subsection{Demonstração Indireta}
-    
-  
-  \section{Teoria Elementar dos Número}
-  
-    \subsection{Princípio da Indução Finita}
-
-Uma propriedade básica dos números naturais e uma ferramenta indispensável na demonstração de muitos teoremas é: o Princípio da Indução Finita (PIF) que é divida em duas formas.
-
-Seja $P(n)$ uma propriedade do número natural n, por exemplo:
-
-\begin{itemize}
-  \item $1+2+...+n=\frac{n(n+1)}{2}$;
-  \item 
-\end{itemize}
-  
-    \subsection{Divisibilidade}
-
-Nesta secção descreveremos a existência e unicidade do quociente e do resto na divisão de inteiros. 
-
-Dado dois inteiros \textit{a} e \textit{b}, dizemos que \textit{a} divide \textit{b} ou que \textit{a} é divisor de \textit{b} ou ainda que \textit{b} é um múltiplo de \textit{a} e denotado 
-
-\begin{align*}
-  a|b
-\end{align*}
-
-\noindent se existir um inteiro \textit{c} tal que $b = ac$.    
-    
-
-    \subsection{O Algoritmo da Divisão}
-    
-    \subsection{MCD e MMC}
-    
-  \section{Números Primos}
-  
-Segundo a nomenclatura \textit{números primos} foi utilizada pela primeira vez por Fibonacci no lugar de incompostos.   
-  
-    \subsection{Crivo de Erastostenes}
-  
-    \subsection{Teorema Fundamental da Aritmética}
-    
+\lipsum[4]

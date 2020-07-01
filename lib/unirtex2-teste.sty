@@ -141,10 +141,10 @@
 %}
 
 \newcommand{\Fonte}[2][\fontename]{ %
-	%	\vspace{-3pt}
+%	\vspace{-3pt}
 	\vspace{8pt}
-	\fonte[\normalfont{#1}]{\normalfont{#2}}
-	\vspace{-5pt}
+ 		\fonte[\normalfont{#1}]{\normalfont{#2}}
+ 	\vspace{-5pt}
 }
 
 % Cria o comando para fazer notas e anotacoes na figura e na tabela
@@ -154,10 +154,10 @@
 %Remove as bordas do hyperlinks.
 \newcommand{\removerbordasdohyperlink}[1]{%
 	\ifthenelse{\equal{#1}{sim}}{%
-		\hypersetup{%
-			pdfborder = {0 0 0}
-		}
-	}
+  		\hypersetup{%
+  		    pdfborder = {0 0 0}
+  		}
+    }
 }
 
 % Altera a cor dos hyperlinks do documento
@@ -180,9 +180,9 @@
 \setboolean{uecetex2@coorientadorfeminino}{false}
 
 \newcommand{\orientadorfeminino}[1]{
-	\ifthenelse{\equal{#1}{sim}}{%
-		\setboolean{uecetex2@orientadorfeminino}{true}
-	}
+	 \ifthenelse{\equal{#1}{sim}}{%
+	 	\setboolean{uecetex2@orientadorfeminino}{true}
+	 }
 }
 
 \newcommand{\coorientadorfeminino}[1]{
@@ -279,9 +279,9 @@
 		pdfsubject={Powered by ueceTeX2 - Acesse https://github.com/thiagodnf/uecetex2} %
 	}%
 	% Define a altura das equacoes matematicas
-	%	\abovedisplayskip=-1pt plus 3pt minus 9pt
-	%	\abovedisplayshortskip=0pt plus 3pt
-	%	\belowdisplayskip=18pt plus 3pt minus 9pt
+%	\abovedisplayskip=-1pt plus 3pt minus 9pt
+%	\abovedisplayshortskip=0pt plus 3pt
+%	\belowdisplayskip=18pt plus 3pt minus 9pt
 	\addtolength\belowdisplayshortskip{\onelineskip}
 }
 
@@ -343,7 +343,6 @@
 \newcommand{\graduacaoem}{\def \@graduacaoem}
 \newcommand{\especializacaoem}{\def \@especializacaoem}
 \newcommand{\habilitacao}{\def \@habilitacao}
-\newcommand{\programarelatorio}{\def \@programarelatorio} %new variable.
 \newcommand{\membrodabancadois}{\def \@membrodabancadois}
 \newcommand{\membrodabancatres}{\def \@membrodabancatres}
 \newcommand{\membrodabancaquatro}{\def \@membrodabancaquatro}
@@ -386,8 +385,6 @@
 \newcommand{\imprimirgraduacaoem}{\@graduacaoem}
 \newcommand{\imprimirespecializacaoem}{\@especializacaoem}
 \newcommand{\imprimirhabilitacao}{\@habilitacao}
-\newcommand{\imprimirprogramarelatorio}{\@programarelatorio}  %new variable.
-\newcommand{\imprimirorientando}{\@orientando}                %new variable.
 \newcommand{\imprimirmembrodabancadois}{\@membrodabancadois}
 \newcommand{\imprimirmembrodabancatres}{\@membrodabancatres}
 \newcommand{\imprimirmembrodabancaquatro}{\@membrodabancaquatro}
@@ -461,12 +458,22 @@
 %%       Definições de Variáveis       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\newcommand{\preambulotccgraduacao}{
-	Relatório Final de Trabalho de Conclusão de Curso apresentado ao Curso de Graduação em \imprimirgraduacaoem\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção do grau de \imprimirhabilitacao\ em \imprimirgraduacaoem. \\
+\newcommand{\preambulotese}{
+	Tese apresentada ao Curso de \imprimirdoutorado\ do \imprimirprogramadoutorado\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção do título de doutor em \imprimirdoutorem. Área de Concentração: \imprimirareadeconcentracaodoutorado \\
 }
 
+\newcommand{\preambulodissertacao}{
+	Dissertação apresentada ao Curso de \imprimirmestrado\ do \imprimirprogramamestrado\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção do título de mestre em \imprimirmestreem. Área de Concentração: \imprimirareadeconcentracaomestrado \\
+}
 
+\newcommand{\preambulotccgraduacao}{
+	Trabalho de Conclusão de Curso apresentado ao Curso de Graduação em \imprimirgraduacaoem\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção do grau de \imprimirhabilitacao\ em \imprimirgraduacaoem. \\
+}
+
+\newcommand{\preambulotccespecializacao}{
+	Trabalho de Conclusão de Curso apresentado ao Curso de Especialização em \imprimirespecializacaoem\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção da certificação de especialista em \imprimirespecializacaoem.
+%Trabalho de Conclusão de Curso apresentado ao Curso de Graduação em \imprimirgraduacaoem\ do \imprimircentro\ da \imprimiries, como requisito parcial à obtenção do grau de \imprimirhabilitacao\ em \imprimirgraduacaoem. \\
+}
 
 \preambulo{
 	\ifthenelse{\boolean{uecetex2@ehqualificacao}}{ %
@@ -492,6 +499,66 @@
 %%                Capa                 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcommand{\imprimircapatese}{%
+	\begin{capa}%
+		% Todos os elementos da capa devem esta centralizado
+		\center
+		% Todos os elementos da capa devem esta em negrito
+		\bfseries
+
+        \includegraphics[width=2cm]{lib/logo-unir} \\
+        \vspace{0.1cm}
+		\MakeUppercase{\imprimiries} \\
+		\MakeUppercase{\imprimircentro} \\
+		\abntex@ifnotempty{\imprimirprogramadoutorado}{
+			\MakeUppercase{\imprimirprogramadoutorado} \\
+		}		
+		\MakeUppercase{\imprimirdoutorado} \\
+
+		\vspace{\onelineskip}
+
+		\MakeUppercase{\imprimirautor}
+		
+		\vspace{5cm}
+		
+		\MakeUppercase{\imprimirtitulo}
+		
+		\vfill
+		\normalsize\MakeUppercase\imprimirlocal\par	
+		\normalsize\imprimirdata
+	\end{capa}
+}
+
+\newcommand{\imprimircapadissertacao}{%
+	\begin{capa}%
+		% Todos os elementos da capa devem esta centralizado
+		\center
+		% Todos os elementos da capa devem esta em negrito
+		\bfseries
+
+        \includegraphics[width=2cm]{lib/logo-unir} \\
+        \vspace{0.1cm}
+		\MakeUppercase{\imprimiries} \\
+		\MakeUppercase{\imprimircentro} \\
+		\abntex@ifnotempty{\imprimirprogramamestrado}{
+			\MakeUppercase{\imprimirprogramamestrado} \\
+		}		
+		\MakeUppercase{\imprimirmestrado} \\
+
+		\vspace{\onelineskip}
+
+		\MakeUppercase{\imprimirautor}
+		
+		\vspace{5cm}
+		
+		\MakeUppercase{\imprimirtitulo}
+		
+		\vfill
+		\normalsize\MakeUppercase\imprimirlocal\par	
+		\normalsize\imprimirdata
+	\end{capa}	
+}
+
 \newcommand{\imprimircapatcc}[2]{%
 	\begin{capa}%
 		% Todos os elementos da capa devem esta centralizado
@@ -503,39 +570,15 @@
         \vspace{0.1cm}
 		\MakeUppercase{\imprimiries} \\
 		\MakeUppercase{\imprimircentro} \\
-		\MakeUppercase{#1 #2} \\ %retirei o nome "Curso" na capa.
+		\MakeUppercase{#1 em #2} \\ %retirei o nome "Curso" na capa.
 
 		\vspace{2cm}
 
 		\MakeUppercase{\imprimirautor}
 		
-		\vspace{2cm}
+		\vspace{5cm}
 		
-		\text{Título do Projeto do Grupo de Pesquisa}
-		\vspace{1cm}
-		\hrule
-		\vspace{0.5cm}
-		\text{Título do Projeto de Pesquisa do Orientador}
-		\vspace{1cm}
-		\hrule
-		\vspace{0.5cm}
 		\MakeUppercase{\imprimirtitulo}
-		\vspace{1cm}
-		\hrule
-		\vspace{0.5cm}
-
-	%Retira o espaço do parágrafo
-	\hspace*{-2cm}
-	%Adiciona o espaço da margem
-	\hspace*{8cm}	
-	\begin{flushleft}
-	  
-	  \artigoorientador: \ignorespaces\imprimirorientador \\
-    \text{Orientando: \ignorespaces\ Douglas Vinícius Gonçalves Araújo} \\
-    \text{( ) Bolsista    (X) Voluntário} \\
-    \text{Período do relatório: \ignorespaces\ 5 de agosto de 2019 a 30 de janeiro de 2020}
-    	
-	\end{flushleft}
 		
 		\vfill
 		\normalsize\MakeUppercase\imprimirlocal\par	
@@ -553,7 +596,7 @@
 			\imprimircapatese	 %
 		}{
 			\ifthenelse{\boolean{uecetex2@ehtccgraduacao}}{ %
-				\imprimircapatcc{\imprimirprogramarelatorio}{}	 %
+				\imprimircapatcc{\imprimirhabilitacao}{\imprimirgraduacaoem}	 %
 			}{
 				\imprimircapatcc{Especialização}{\imprimirespecializacaoem} %
 			}
@@ -870,12 +913,11 @@
 \newtheorem{premissa}{Premissa}[chapter]
 \newtheorem{procedimento}{Procedimentos}[section]
 \newtheorem{heuristica}{Heurística}[section]
-\newtheorem{axioma}{Axioma}[chapter]
-\newtheorem{exem}{Exemplo}[chapter]
+\newtheorem{axioma}{Axioma}[section]
+\newtheorem{exem}{Exemplo}
 \newtheorem{xdefinicao}{Definição}[section]
 \newtheorem{cdefinicao}{Definição}[chapter]
 \newtheorem{propriedade}{Propriedade}[chapter]
-%\newtheorem{proof}{Demonstração}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%             Questoes                %%
@@ -1124,6 +1166,16 @@
 	\end{KeepFromToc} %
 }
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Lista de Simbolos           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimirlistadesimbolos}[1]{
+	\input{#1}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%               Apendices             %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1198,16 +1250,16 @@
 			\def\f@rtoc{%
 				\texorpdfstring{\tempf@rtoc}{\tempf@rtoc}}%
 		}{
-			\let\tempf@rtoc\f@rtoc%
-			\def\f@rtoc{%
-				\texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
-		}
-	}
-	\settocpreprocessor{part}{%
 		\let\tempf@rtoc\f@rtoc%
 		\def\f@rtoc{%
 			\texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
 	}
+}
+\settocpreprocessor{part}{%
+	\let\tempf@rtoc\f@rtoc%
+	\def\f@rtoc{%
+		\texorpdfstring{\MakeTextUppercase{\tempf@rtoc}}{\tempf@rtoc}}%
+}
 }{}
 \makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1295,7 +1347,7 @@
 	{%
 		\oldcontentsline{#1}{\MakeTextUppercase{#2}}%
 	}{%
-		\oldcontentsline{#1}{#2}%
-	}%
+	\oldcontentsline{#1}{#2}%
+}%
 }
 \makeatother

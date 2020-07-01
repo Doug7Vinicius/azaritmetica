@@ -20,6 +20,9 @@
 
 %\relatorioacademico{relatorio}
 \trabalhoacademico{tccgraduacao}
+%\trabalhoacademico{tccespecializacao}
+%\trabalhoacademico{dissertacao} será retirado
+%\trabalhoacademico{tese} será retirado
 
 % Define se o trabalho eh uma qualificacao
 % Coloque 'nao' para versao final do trabalho
@@ -41,7 +44,7 @@
 
 \ies{Fundação Universidade Federal de Rondônia}
 \iessigla{UNIR}
-\centro{PRÓ-REITORIA DE PÓS-GRADUAÇÃO E PESQUISA – PROPESq}
+\centro{Departamento de Matemática e Estatística}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        Informação para TCC de Graduacao         %%
@@ -49,15 +52,37 @@
 
 \graduacaoem{Estatística}
 \habilitacao{bacharelado} % Pode colocar tambem 'licenciada', 'bacharel'.
-\programarelatorio{PROGRAMA INSTITUCIONAL DE BOLSAS E TRABALHO VOLUNTÁRIO DE INICIAÇÃO CIENTÍFICA – PIBIC/UNIR/CNPq}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Informação para TCC de Especializacao       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\especializacaoem{Alfabetização de Crianças}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informação para Dissertacao             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\programamestrado{Programa de Pós-Graduação em Ciência da Computação}
+%\nomedomestrado{Mestrado Acadêmico em Ciência da Computação}
+%\mestreem{Ciência da Computação}
+%\areadeconcentracaomestrado{Ciência da Computação}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Informação para Tese              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\programadoutorado{Programa de Pós-Graduação em Saúde Coletiva}
+%\nomedodoutorado{Doutorado em Saúde Coletiva}
+%\doutorem{Saúde Coletiva}
+%\areadeconcentracaodoutorado{Saúde Coletiva}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Informação relacionadas ao trabalho     %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\autor{RELATÓRIO PARCIAL E RESUMO INFORMATIVO DO PIBIC/UNIR/CNPq
-CICLO 2019/2020}
-\titulo{NÚMEROS PRIMOS: OS ÁTOMOS DA ARITMÉTICA}
+\autor{Douglas Vinícius Gonçalves Araújo}
+\titulo{Análise de Regressão de Cox Aplicado em Reincidência Criminal DO PRESÍDIO AGENOR MARTINS DE JI-PARANÁ}
 \data{2020}
 \local{Ji-Paraná - RO}
 
@@ -68,10 +93,10 @@ CICLO 2019/2020}
 %%     Informação sobre o Orientador       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\orientador{Profª. Dra. Lucia de Fatima de Medeiros Brandão Dias}
+\orientador{Prof. Dr. Nerio Aparecido Cardoso}
 \orientadories{Fundação Universidade Federal de Rondônia}
 \orientadorcentro{Departamento de Matemática e Estatística}
-\orientadorfeminino{sim} % Coloque 'sim' se for do sexo feminino
+\orientadorfeminino{nao} % Coloque 'sim' se for do sexo feminino
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      Informação sobre o Co-orientador   %%
@@ -114,13 +139,13 @@ CICLO 2019/2020}
 
 	% Elementos pré-textuais
 	\imprimircapa
-%	\imprimirfolhaderosto{}
+	\imprimirfolhaderosto{}
 %	\imprimirfichacatalografica{elementos-pre-textuais/ficha-catalografica}
 %	\imprimirerrata{elementos-pre-textuais/errata}
 %	\imprimirfolhadeaprovacao
-%	\imprimirdedicatoria{elementos-pre-textuais/dedicatoria}
-%	\imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
-%	\imprimirepigrafe{elementos-pre-textuais/epigrafe}
+	\imprimirdedicatoria{elementos-pre-textuais/dedicatoria}
+	\imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
+	\imprimirepigrafe{elementos-pre-textuais/epigrafe}
 	\imprimirresumo{elementos-pre-textuais/resumo}
 	\imprimirabstract{elementos-pre-textuais/abstract}
 	\imprimirlistadeilustracoes
@@ -129,26 +154,26 @@ CICLO 2019/2020}
 %	\imprimirlistadealgoritmos
 %	\imprimirlistadecodigosfonte
 %	\imprimirlistadeabreviaturasesiglas	
-%	\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos}   
+	\imprimirlistadesimbolos{elementos-pre-textuais/lista-de-simbolos}   
 	\imprimirsumario
 	
 	%Elementos textuais
-%	\textual
+	\textual
 	\input{elementos-textuais/introducao}
-%	\input{elementos-textuais/fundamentacao-teorica}
-	\input{elementos-textuais/objetivo}
-%	\input{elementos-textuais/metodologia}
-  \input{elementos-textuais/materiais-metodos}
-	\input{elementos-textuais/resultados}
-	\input{elementos-textuais/conclusao}
+	\input{elementos-textuais/fundamentacao-teorica}
+%	\input{elementos-textuais/trabalhos-relacionados}
+	\input{elementos-textuais/metodologia}
+ \input{elementos-textuais/cronograma}
+%	\input{elementos-textuais/resultados}
+%	\input{elementos-textuais/conclusao}
 	
 	%Elementos pós-textuais	
 	\bibliography{elementos-pos-textuais/referencias}
 %	\imprimirglossario	
-%	\imprimirapendices
+	\imprimirapendices
 		% Adicione aqui os apendices do seu trabalho
-%		\input{elementos-pos-textuais/apendices/historico-de-mudancas}
-%		\input{elementos-pos-textuais/apendices/lorem-ipsum}
+		\input{elementos-pos-textuais/apendices/delta-dirac}
+		\input{elementos-pos-textuais/apendices/product-integral}
 %		\input{elementos-pos-textuais/apendices/termo-de-fiel-depositario}	
 %	\imprimiranexos
 		% Adicione aqui os anexos do seu trabalho

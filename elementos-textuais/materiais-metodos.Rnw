@@ -1,3 +1,0 @@
-\chapter{MATÉRIAIS E MÉTODOS}
-\label{chap:materiais-metodos}
-
