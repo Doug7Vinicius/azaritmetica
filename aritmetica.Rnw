@@ -82,7 +82,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \autor{Douglas Vinícius Gonçalves Araújo}
-\titulo{Análise de Regressão de Cox Aplicado em Reincidência Criminal DO PRESÍDIO AGENOR MARTINS DE JI-PARANÁ}
+\titulo{Probabilidade e Aritmética}
 \data{2020}
 \local{Ji-Paraná - RO}
 
@@ -93,10 +93,10 @@
 %%     Informação sobre o Orientador       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\orientador{Prof. Dr. Nerio Aparecido Cardoso}
+\orientador{Prof. Dr. Lucia}
 \orientadories{Fundação Universidade Federal de Rondônia}
 \orientadorcentro{Departamento de Matemática e Estatística}
-\orientadorfeminino{nao} % Coloque 'sim' se for do sexo feminino
+\orientadorfeminino{sim} % Coloque 'sim' se for do sexo feminino
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%      Informação sobre o Co-orientador   %%
