@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.25)  1 JUL 2020 01:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.25)  3 JUL 2020 14:38
 entering extended mode
 **./aritmetica.tex
 (aritmetica.tex
@@ -1562,64 +1562,59 @@ l.192 	\imprimirfolhaderosto{}
 
 
 ] (elementos-pre-textuais/dedicatoria.tex)
-Overfull \hbox (4.80414pt too wide) in paragraph at lines 196--197
+Overfull \hbox (4.80414pt too wide) in paragraph at lines 196--198
 []|  |  $[]$
  []
 
 [2
 
-] (elementos-pre-textuais/agradecimentos.tex) [3
-
-]
-(elementos-pre-textuais/epigrafe.tex)
+] (elementos-pre-textuais/epigrafe.tex)
 Overfull \hbox (4.80414pt too wide) in paragraph at lines 198--199
 []|  |  $[]$
  []
 
-[4
+[3] (elementos-pre-textuais/resumo.tex) [4]
+(elementos-pre-textuais/abstract.tex) [5
 
-] (elementos-pre-textuais/resumo.tex) [5]
-(elementos-pre-textuais/abstract.tex) [6
-
-] (aritmetica.lof) [7
+] (aritmetica.lof) [6
 
 ] (aritmetica.lot
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 2.
-) [8] (elementos-pre-textuais/lista-de-simbolos.tex [9
+) [7] (elementos-pre-textuais/lista-de-simbolos.tex [8
 
 ]) (aritmetica.toc)
-[10
+[9
 
 ] (elementos-textuais/introducao.tex)
-(elementos-textuais/fundamentacao-teorica.tex [11
+(elementos-textuais/fundamentacao-teorica.tex [10
 
 
 ])
-(elementos-textuais/metodologia.tex [12
+(elementos-textuais/metodologia.tex [11
 
 ]) (elementos-textuais/cronograma.tex
-[13
+[12
 
 ]
 Overfull \hbox (40.46155pt too wide) in paragraph at lines 22--40
  [][] 
  []
 
-) (aritmetica.bbl [14
+) (aritmetica.bbl [13
 
 ]
 bibitemlist
 
 LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-) [15
+) [14
 
-] [16] (elementos-pos-textuais/apendices/delta-dirac.tex)
-(elementos-pos-textuais/apendices/product-integral.tex [17
+] [15] (elementos-pos-textuais/apendices/delta-dirac.tex)
+(elementos-pos-textuais/apendices/product-integral.tex [16
 
 
-]) [18
+]) [17
 
 ]
 \tf@lof=\write4
@@ -1640,22 +1635,22 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 234.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 31873 strings out of 492482
- 534433 string characters out of 3131019
- 801971 words of memory out of 3000000
- 35672 multiletter control sequences out of 15000+200000
+ 31544 strings out of 492482
+ 527662 string characters out of 3131019
+ 801970 words of memory out of 3000000
+ 35343 multiletter control sequences out of 15000+200000
  561013 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,12n,69p,1662b,600s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,12n,69p,1662b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on aritmetica.pdf (19 pages, 122948 bytes).
+Output written on aritmetica.pdf (18 pages, 126751 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 19670 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 19710 words of extra memory for PDF output out of 20736 (max. 10000000)
 

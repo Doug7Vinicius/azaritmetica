@@ -144,7 +144,7 @@
 %	\imprimirerrata{elementos-pre-textuais/errata}
 %	\imprimirfolhadeaprovacao
 	\imprimirdedicatoria{elementos-pre-textuais/dedicatoria}
-	\imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
+%	\imprimiragradecimentos{elementos-pre-textuais/agradecimentos}
 	\imprimirepigrafe{elementos-pre-textuais/epigrafe}
 	\imprimirresumo{elementos-pre-textuais/resumo}
 	\imprimirabstract{elementos-pre-textuais/abstract}
